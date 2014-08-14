@@ -1,9 +1,16 @@
 <?php
 
+$debug = 0;
+
+// For debugging
+if($debug == 1){
+	$_POST["ldap"] = "praveendath92";
+	$_POST["code"] = "DEBUGGING";
+}
 
 $from = "iitblit@praveenkumar.co.in";
 $to = $_POST["ldap"]."@iitb.ac.in";
-$message = "Hello !<br>Your verification code is: ".$_POST["code"];
+$message = "Hello !<br>Your verification code is: ".$_POST['code'];
 $subject = "IITB Lit verification";
 
 //this is a path to PHP mailer class you have dowloaded

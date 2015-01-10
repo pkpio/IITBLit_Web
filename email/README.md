@@ -1,0 +1,1 @@
+Note: The default script assumes php built-in mailer support from hosting service. If that' not the case, then use the smtp mailer. SMTP mailer can be used with iitb credentials or gmail - any server for that matter.
